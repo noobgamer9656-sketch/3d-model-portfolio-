@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - 3D Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1>🎨 Admin Panel</h1>
+    <a href="index.html">← Back Home</a>
+  </nav>
+
+  <main class="container">
+    <h2>Add New 3D Model</h2>
+    <form id="addForm" class="form">
+      <input type="text" id="name" placeholder="Model Name" required>
+      <input type="text" id="description" placeholder="Description (optional)">
+      <input type="url" id="fileUrl" placeholder="Paste .glb file URL" required>
+      <button type="submit">➕ Add Model</button>
+    </form>
+
+    <h2>My Models</h2>
+    <div id="modelsList"></div>
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
